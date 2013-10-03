@@ -80,6 +80,111 @@ Pregunta 38:
 Pregunta 39:
         a = (1...4).to_a: crea un vector de caracteres de 1 a n-1, siendo en este caso n = 4.
         a = a + [4,5]: añade al vector los elementos 4 y 5: [1, 2, 3, 4, 5]
+        a += [[6, 7, 8]]: inserta los elementos del vector incluido los corchetes internos: [1, 2, 3, 4, 5, [6, 7, 8]]
+        a = a + 9, no se puede hacer una conversion implicita.
+
+Pregunta 40:
+        %w{a b c b a}: crea un array con los elementos definidos, transformandonos en caddena ["a", "b", "c", "b", "a"]
+        x = x - %w{b c d}: elimina los elementos  definidos, ["a", "a"]
+
+Pregunta 41:
+        z = [0]*8, crea un array de 8 elementos inicializados a 0, [0, 0, 0, 0, 0, 0, 0, 0]
+
+Pregunta 42:
+         a << 1: inserta el elemento 1
+         a << 2 << 3: inserta los dos elementos en el array [1, 2, 3]
+         a << [4, 5, 6] inserta el conjunto como un elemento del array  [1, 2, 3, [4, 5, 6]]
+         a.concat [7, 8]: contatena los elementos definidos [1, 2, 3, [4, 5, 6], 7, 8]
+
+Pregunta 43:
+          c = a | b: inserta los elementos descartando los repetidos entre los dos vectores [1, 2, 3, 4, 5]
+          d = b | a: inseta los elementos descartando los repetidos combinando b con a 
+          e = a & b: inseta los elementos comunes de a y b en el vector e
+          f = b & a: idem al anterior pero cambia el orden de los vectores, es decir, chequea utilizando b los elementos de a
+
+Pregunta 44:
+          b.to_a: crea el vector definidp en el rango con n-1  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+         b.include? 10: false, no existe dicho elemento
+         b.include? 8: true, por lo tanto si existe dicho elemento
+         b.step(2) {|x| print "#{x} "}: 1 3 5 7 9 => 1...10
+         1..3.to_a: undefined method `to_a' for 3:Fixnum
+        	from (irb):67
+	        from /usr/bin/irb:12:in `<main>'
+
+Pregunta 45:
+          r.member? 50: true.
+          r.include? 99.9: true.
+          r.member? 99.9:  true.
+
+Pregunto 46:
+          true.class: TrueClass.
+          false.class: FalseClass.
+          puts "hello" if 0: hello.
+          puts "hello" if nil: nil.
+          puts "hello" if "": (irb):76: warning: string literal in condition
+                                     hello
+                                     => nil
+
+Pregunta 47:
+          x.class: Symbol.
+          x == :sym : true.
+          z = :'a log symbol' : :"a log symbol".
+          z.class : Symbol
+          x == 'sym'.to_sym : true.
+          x.to_s == 'sym' : true.
+
+Pregunta 48:
+          print s : Rub=> nil.
+          print s, t : RubJava=> nil
+
+Pregunta 49:
+          "%d %s" % [3, "rubies"] : "3 rubies".
+
+Pregunta 50:
+         x , y = 4, 5 : [4, 5]
+         z = x > y ? x : y   : 5
+         x,y,z = [1,2,3] : [1, 2, 3]
+                            x = 1.
+                            y = 2.
+                            z = 3.
+
+Pregunta 51:
+         x.keys : [:a, :b].
+         x.values : [1, 2].
+         x[:c] =  3 : 3.
+         x : {:a=>1, :b=>2, :c=>3}.
+         x.delete('a') : nil
+         x :  {:a=>1, :b=>2, :c=>3}
+         x.delete(:a) : 1.
+         x : {:b=>2, :c=>3}.
+         x = { :a => 1, :b => 2, :c => 4 } : {:a=>1, :b=>2, :c=>4}.
+         x.delete_if { |k,v| v % 2 == 0 } :  {:a=>1}.
+         x :  {:a=>1}.
+
+Pregunta 52:
+      
+
+Pregunta 53:
+      ambos crea una tabla de tipo hash (:hash)
+
+Pregunta 54:
+      'hello world, hello LPP'.scan /\w+/ : crea un vector tomando como delimitador el espacio en blanco.
+
+Pregunta 55>
+        c = { :a => 3, :b => 2, :c => 1 } > crea un clase con las variables  {:a=>3, :b=>2, :c=>1}
+        c.keys.sort.each { |k| puts c[k] } : muestra los valores de la variables de la clase.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
