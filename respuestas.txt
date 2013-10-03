@@ -9,7 +9,7 @@ Pregunta 22:
         transforma el interior de los corchetes en cadenas de texto 
 
 Pregunta 23:
-        
+       El yield se utiliza para el manero de bloques. 
 
 Pregunta 24:
       en c queda: 
